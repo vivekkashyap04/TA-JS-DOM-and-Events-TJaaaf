@@ -1,19 +1,25 @@
-let ul = document.querySelector('.boxes');
-for(var i= 1; i<=12;i++){
-    let li = document.createElement('li');
-    li.classList.add('box');
-    li.innerText = i;
-    li.addEventListener('click',function(){
+let list = document.querySelectorAll('.first li');
+list.forEach((elem,index) =>
+{
+    elem.addEventListener('click',(event) => {
+        event.target.innerText =index + 1;
         setTimeout(function(){
-            li.innerText = '';
+            event.target.innerText = '';
         },5000);
     })
-    ul.append(li);
-}
+})
 
-let eventul = document.querySelector('.boxes1');
+let eventul = document.querySelector('.second');
+let li = document.querySelectorAll('.second li');
+li.forEach((elem,index) => {
+    elem.setAttribute('data-text',index);
+})
 function handler(event){
-    
+    let target = event.target.dataset.text;
+    event.target.innerText = Number(target) + 1;
+    setTimeout(function(){
+        event.target.innerText = '';
+    },5000);
 }
 
 
