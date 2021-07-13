@@ -36,7 +36,7 @@ img {
 
 body {
   background: #f2f4f8;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
@@ -69,6 +69,14 @@ body {
 }
 
 .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: chocolate;
+  color: #444;
+  padding: 20px 0;
+}
+.boxes1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
