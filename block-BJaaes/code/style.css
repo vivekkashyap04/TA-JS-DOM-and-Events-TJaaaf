@@ -1,0 +1,67 @@
+/* CSS Reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+form {
+  margin: 10px auto;
+  width: 500px;
+}
+h1 {
+  text-align: center;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+small {
+  display: block;
+  font-size: 16px;
+  color: red;
+}
+input,
+button {
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+input:invalid {
+  border: 2px solid red;
+}
+input:valid {
+  border: 2px solid green;
+}
