@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation 👇</title>
+  </head>
+  <body>
+    <header>
+      <h1>Create Account</h1>
+    </header>
+    <main>
+      <form>
+        <div class="form-control">
+          <label>Username</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="enter your Username"
+            required
+          />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label>name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="enter your name"
+            required
+          />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label>email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="enter your email"
+            minlength="6"
+            required
+          />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label>phone</label>
+          <input
+            type="text"
+            name="phone"
+            placeholder="enter your phone number"
+            minlength="10"
+            required
+          />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label>password</label>
+          <input
+            type="text"
+            name="password"
+            placeholder="enter your password"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label>confirm password</label>
+          <input
+            type="text"
+            name="confirmpwd"
+            placeholder="enter your confirm password"
+            required
+          />
+          <small></small>
+        </div>
+        <button type="submit">submit</button>
+      </form>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
