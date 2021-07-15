@@ -5,7 +5,6 @@ let userInfo = {};
 function handler(event){
      event.preventDefault();
      console.log(event);
-     console.log(form.elements.text);
      userInfo.name = form.elements.text.value;
      userInfo.email = form.elements.email.value;
      userInfo.gender = form.elements.gender.value;
