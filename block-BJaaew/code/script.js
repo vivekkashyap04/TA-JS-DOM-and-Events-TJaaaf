@@ -22,6 +22,7 @@ let fillterBtn = document.querySelector('.btn');
     got.houses.forEach(item => {
         let btn = document.createElement('button');
         btn.innerText = item.name;
+        btn.classList.add('filtterbtn');
         fillterBtn.append(btn);
     })
 
