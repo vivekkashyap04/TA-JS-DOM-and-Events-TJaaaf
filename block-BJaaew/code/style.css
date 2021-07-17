@@ -136,6 +136,18 @@ body {
 }
 header {
   text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(to left, #6dccfc, #9974fc);
+}
+h1 {
+  font-size: 40px;
+  padding: 10px;
+}
+input {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  outline: none;
 }
 ul {
   display: flex;
@@ -153,6 +165,28 @@ li {
 img {
   border-radius: 50%;
 }
+h2 {
+  font-weight: 600;
+}
+p {
+  padding: 10px 0;
+}
 .btn {
   margin: 10px 0;
+  text-align: center;
+}
+.filtterbtn {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+  width: 100px;
+  font-size: 15px;
+  border: none;
+}
+.filtterbtn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
